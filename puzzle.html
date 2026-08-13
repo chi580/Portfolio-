@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimma's Puzzle — Chidimma Nwonye</title>
+  <link rel="stylesheet" href="./puzzle-style.css">
+</head>
+<body>
+  <a class="backLink" href="./index.html">&larr; Back to portfolio</a>
+  <p class="tagline">slide, solve, repeat</p>
+  <h1>Dimma's Puzzle</h1>
+  <p id="counter">Moves: 0</p>
+  <p id="levelIndicator">Puzzle 1 of 5</p>
+  <div id="difficulty">
+    <button class="diffBtn" data-size="3">Easy</button>
+    <button class="diffBtn" data-size="4">Medium</button>
+    <button class="diffBtn" data-size="5">Hard</button>
+  </div>
+  <div id="board"></div>
+  <button id="newGameBtn">New Game</button>
+  <button id="nextPuzzleBtn">Next Puzzle</button>
+  <div id="winOverlay" class="hidden">
+    <div class="winCard">
+      <h2>Solved! 🎉</h2>
+      <p id="finalMoves"></p>
+      <button id="playAgainBtn">Play Again</button>
+      <button id="winNextBtn">Next Puzzle</button>
+    </div>
+  </div>
+  <script src="./puzzle-script.js"></script>
+</body>
+</html>
